@@ -1,0 +1,25 @@
+.stats-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(to right, #795548, #bcaaa4); 
+    padding: 3rem 1rem;
+    text-align: center;
+    gap: 2rem;
+  }
+  .stat-item{
+background-color: #efebe7 ;
+width: 180px;
+height: 120px;
+border-radius: 12px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+box-shadow:  4px 10px rgba(0, 0, 0, 0.1);
+  }
+  .stat-value{
+    font-size: 2rem;
+    color:#6d4c41;
+    margin-top: 0.5rem;
+  }
