@@ -4,7 +4,9 @@ import Hero from "../components/Hero";
 import Stats from "../components/Stats";
 import Features from "../components/Features";
 import CallToAction from "../components/CallToAction";
-import ContactFom from "../components/ContactForm";
+import Footer from "../components/Footer";
+import PlanosSection from "../planos/PlanosSection";
+
 
 export default function Home() {
 return(
@@ -13,8 +15,9 @@ return(
         <Hero />
         <Stats />
         <Features />
+       <PlanosSection />
         <CallToAction />
-        <ContactFom />
+        <Footer />
 
     </div>
 

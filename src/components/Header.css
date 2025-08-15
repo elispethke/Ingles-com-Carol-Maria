@@ -1,108 +1,116 @@
-/* Header.css */
 
+/* Header */
 .header {
-   position: fixed;
-    width: 100%;
-    background-color: #4e342e; 
-    border-bottom: 1px solid #fff;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-    
-  }
+  background-color: #221610;
+  border: none;
+  box-shadow: none; 
+  margin: 0;  
+  padding: 0 7rem; 
+  top: 0;  
+  left: 0;
   
-  .container {
-    max-width: 112rem;
-    margin: 0 auto;
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.5rem;
-  }
-  
-  .title {
-      
-        font-size: 3.5rem; 
-        font-weight: 900;  
-        color: #fff;
-        text-align:right; 
-        text-shadow: 0 0 3px rgba(255, 255, 255, 0.8), 0 0 12px rgba(255, 255, 255, 0.6);
-        margin: 2rem left;  
-        user-select: none;
-        max-width: 90%;
-      
-      
-  }
-  .header-img{
-    width: 100px;
-    height: 100px;
-    border-radius: 12px;
+  width: 100%;
+  height: 180px; 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+}
 
-  }
+/* Reset global para eliminar margens padrão */
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+/* Container para logo + nav */
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 2rem; 
+  justify-content: center;
+  flex-grow: 1;
+}
+
+/* Logo */
+.header-img {
+  width: 550px; 
+  height: auto;
+  object-fit: contain;
+  display: block;
+  margin-left: 0;
   
+}
+
+/* Menu horizontal */
+.nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav a {
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  font-weight: 700;
+  color: #fff; 
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+  font-size: larger;
+}
+
+.nav a:hover { 
+  background-color: #8B5E3C;    
+}
+
+/* Botões à direita */
+.buttons {
+  display: flex;
+  gap: 1rem; 
+}
+
+.btn-login,
+.btn-signup {
+  background-color: #3E2C23;
+  border: 1px solid #fff; 
+  color: #fff; 
+  font-size: 0.875rem; 
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  padding: 0.5rem 1.25rem; 
+  border-radius: 0.375rem; 
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-login:hover,
+.btn-signup:hover {
+  background-color:  #8B5E3C; 
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+  .header-img {
+    width: 200px;
+  }
   .nav {
-    display: none;
-    gap: 2rem; 
+    gap: 1rem;
   }
-  
-  .nav a {
-    font-weight: 500;
-    color: #fff; 
-    text-decoration: none;
-    transition: color 0.3s ease;
-    display: inline-block;
-    padding: 8px 16px;
-    margin: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    border-radius: 8px;
-    
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    height: auto;
+    padding: 2rem 1rem 1rem 1rem; /* mais espaçamento superior no mobile */
   }
-  
-  .nav a:hover {
-   
-background-color: #b8860b; 
-      
-      
+  .header-left {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
   }
-  
   .buttons {
-    display: flex;
-    gap: 1rem; 
+    justify-content: center;
+    margin-top: 1rem;
   }
-  
-  .btn-login {
-    background-color: transparent;
-    border: 1px solid #fff; 
-    color: #fff; 
-    font-size: 0.875rem; 
-    padding: 0.5rem 1.25rem; 
-    border-radius: 0.375rem; 
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .btn-login:hover {
-    background-color: #b8860b; 
-  }
-  
-  .btn-signup {
-    background-color: #f5f5dc; /* green-600 */
-    border: none;
-    color: #4e342e;
-    font-size: 0.875rem;
-    padding: 0.5rem 1.25rem;
-    border-radius: 0.375rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .btn-signup:hover {
-    background-color: #b8860b; 
-  }
-  
-  /* Media Query para mostrar a nav a partir de md (768px) */
-  @media (min-width: 768px) {
-    .nav {
-      display: flex;
-    }
-  }
-  
+}
+

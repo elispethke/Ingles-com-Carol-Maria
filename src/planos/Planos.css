@@ -1,0 +1,82 @@
+
+.planos-section {
+  padding: 5rem 2rem;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.planos-title {
+  font-size: 2.2rem;
+  font-weight: 900;
+  color: #2f221b;
+  margin-bottom: 1rem;
+}
+
+.planos-subtitle {
+  font-size: 1.125rem;
+  color: #555;
+  margin-bottom: 3rem;
+}
+
+.planos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+}
+
+.plano-card {
+  background: #6e5547;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(56, 54, 54, 0.414);
+  transition: all 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.plano-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.1);
+}
+
+.plano-card h2 {
+  font-size: 1.5rem;
+  color: #f1f2f4;
+  margin-bottom: 0.75rem;
+}
+
+.plano-card p {
+  font-size: 1rem;
+  color: #fbfafa;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.plano-valor {
+  font-size: 1.4rem;
+  font-weight: 900;
+  color: #f9f7f7;
+  margin-bottom: 1.5rem;
+}
+
+.btn-buy {
+  display: inline-block;
+  background: linear-gradient(90deg, #b8aca6, #f8e7df);
+  color: #2f221b;
+  font-weight: 600;
+  padding: 0.9rem 1.5rem;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn-buy:hover {
+  background: linear-gradient(90deg, #9f8c82, #4b3528);
+  transform: translateY(-2px);
+}
+
+.btn-buy:active {
+  transform: translateY(0);
+}
